@@ -1,0 +1,188 @@
+/* Prymery background color #e5e5e5 */
+/* secondary background color #F5F4FA */
+/* Titltle color #212121*/
+/* Secondary color #757575 */
+/* acсent color #2196F3 */
+/* color white #ffffff */
+
+:root {
+  --background-color: #e5e5e5;
+  --background-footer-color: #2f303a;
+  --title-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-logo-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--title-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Шапка */
+header {
+  background-color: var(--white-color);
+}
+.logo,
+.logo-footer {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo span {
+  color: var(--black-logo-color);
+}
+
+/* Ссылки */
+.site-nav .link-nav {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link-nav:hover,
+.site-nav .link-nav:focus {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.link .address {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link .address:hover,
+.link .address:focus {
+  color: var(--accent-color);
+}
+
+/* Main СТУДИЯ */
+
+/* Герой */
+.hero-text {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Особенности */
+.peculiarities .peculiarities-title {
+  color: var(--title-color);
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.peculiarities .peculiarities-description {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+.our-work .title,
+.our-team .title {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Наша команда */
+.our-team .name {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.our-team .position {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* Main  ПОРТФОЛИО */
+.buttons-list .button {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.buttons-list .button:hover,
+.buttons-list .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.project-list .title {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-list .meaning {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* Футер */
+footer {
+  background-color: var(--background-footer-color);
+}
+.logo-footer span {
+  color: var(--white-color);
+}
+.address-link {
+  color: var(--white-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+.footer .address {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  line-height: 1.71px;
+}
+.footer .address:hover,
+.footer .address:focus {
+  color: var(--accent-color);
+}
