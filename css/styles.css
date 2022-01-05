@@ -6,16 +6,18 @@
 /* color white #ffffff */
 
 :root {
-  --background-color: #e5e5e5;
+  --background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
   --background-footer-color: #2f303a;
   --title-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
   --black-logo-color: #000000;
 }
 
 body {
+  width: 1600px;
+
   background-color: var(--background-color);
   color: var(--title-color);
   font-family: Roboto, sans-serif;
@@ -29,11 +31,25 @@ ul {
 a {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* Шапка */
-header {
-  background-color: var(--white-color);
+.header {
+  background-color: var(--background-color);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+}
+
 .logo,
 .logo-footer {
   color: var(--accent-color);
@@ -43,11 +59,32 @@ header {
   font-size: 26px;
   line-height: 1.19;
 }
+.logo-header {
+  display: block;
+  margin: 24px 0 24px 15px;
+}
 .logo span {
   color: var(--black-logo-color);
 }
 
 /* Ссылки */
+.site-nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 93px;
+}
+
+/* Алтернативный вариант: .site-nav .item + .item { 
+  margin-left 50px}
+  применится margin-left
+  только к тем, у кого есть сосед сверху в списке
+  */
+
+/* Применяется ко всему списку кроме последнего */
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link-nav {
   color: var(--title-color);
   font-weight: 500;
@@ -61,7 +98,19 @@ header {
 }
 
 /* Контакты */
+.link {
+  display: flex;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.link .item + .item {
+  margin-left: 50px;
+}
+
 .link .address {
+  display: block;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -76,8 +125,16 @@ header {
 /* Main СТУДИЯ */
 
 /* Герой */
+.hero {
+  background-color: var(--background-footer-color);
+  height: 600px;
+}
+
 .hero-text {
-  color: var(--white-color);
+  display: block;
+  margin: 0;
+  padding-top: 200px;
+  color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,8 +143,15 @@ header {
   text-transform: uppercase;
 }
 .hero .button {
+  display: block;
+  border: 0;
+  padding: 10px 29px 10px 29px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
   background-color: var(--accent-color);
-  color: var(--white-color);
+  color: var(--background-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -99,6 +163,26 @@ header {
 }
 
 /* Особенности */
+.peculiarities .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hidden-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .card-set {
+  display: flex;
+  padding: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .peculiarities .peculiarities-title {
   color: var(--title-color);
   font-weight: bold;
@@ -111,7 +195,29 @@ header {
 }
 
 /* Чем мы занимаемся */
-.our-work .title,
+
+.our-work .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 94px;
+}
+.container .work-card {
+  display: flex;
+  padding: 0;
+  margin: 0 15px 0 15px;
+}
+.title-work {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-card .item {
+  margin-top: 50px;
+}
+.work-card .item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-work .title-work,
 .our-team .title {
   color: var(--title-color);
   font-weight: bold;
@@ -119,18 +225,43 @@ header {
   line-height: 1.16;
   text-align: center;
 }
-
 /* Наша команда */
+.our-team {
+  height: 648px;
+  background-color: var(--secondary-background-color);
+}
+
+.our-team .container {
+  margin-top: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .title {
+  padding-top: 94px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .team-card {
+  display: flex;
+  padding: 0;
+  margin: 50px 15px 0 15px;
+}
+.team-card .item:not(:last-child) {
+  margin-right: 30px;
+}
 .our-team .name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .our-team .position {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 /* Main  ПОРТФОЛИО */
@@ -162,14 +293,35 @@ header {
   letter-spacing: 0.03em;
 }
 /* Футер */
+
 footer {
+  height: 252px;
   background-color: var(--background-footer-color);
 }
+
+.logo-footer {
+  display: block;
+  padding-top: 60px;
+  margin-top: 0;
+  margin-left: 15px;
+  margin-right: auto;
+}
+.footer-address {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 0;
+  margin-bottom: 60px;
+}
+.footer-address .link-footer:not(:first-child) {
+  padding-top: 20px;
+}
+
 .logo-footer span {
-  color: var(--white-color);
+  color: var(--background-color);
 }
 .address-link {
-  color: var(--white-color);
+  color: var(--background-color);
   font-style: normal;
   line-height: 1.71;
 }
