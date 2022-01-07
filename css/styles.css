@@ -31,12 +31,25 @@ ul {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .container {
   outline: 1px solid tomato;
   width: 1200px;
-  height: 100%;
+
   margin-right: auto;
   margin-left: auto;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Шапка */
@@ -129,13 +142,12 @@ a {
 /* Герой */
 .hero {
   background-color: var(--background-footer-color);
-  height: 600px;
 }
 
 .hero-text {
   display: block;
   margin: 0;
-  padding-top: 200px;
+
   color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
@@ -147,11 +159,12 @@ a {
 .hero .button {
   display: block;
   border: 0;
+  border-radius: 4px;
   padding: 10px 29px 10px 29px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
+
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: bold;
@@ -186,12 +199,15 @@ a {
 }
 
 .peculiarities .peculiarities-title {
+  outline: 1px solid tomato;
   color: var(--title-color);
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .peculiarities .peculiarities-description {
+  margin-top: 10px;
+  outline: 1px solid tomato;
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
@@ -201,7 +217,6 @@ a {
 .our-work .container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 94px;
 }
 .container .work-card {
   display: flex;
@@ -209,7 +224,6 @@ a {
   margin: 0 15px 0 15px;
 }
 .title-work {
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -229,18 +243,14 @@ a {
 }
 /* Наша команда */
 .our-team {
-  height: 648px;
   background-color: var(--secondary-background-color);
 }
 
 .our-team .container {
-  margin-top: 94px;
   display: flex;
   flex-wrap: wrap;
 }
 .container .title-team {
-  padding-top: 94px;
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -272,8 +282,6 @@ a {
 .project-buttons .container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .buttons-container .buttons-list {
@@ -285,17 +293,17 @@ a {
   margin-bottom: 8px;
   width: 1200px;
 }
+
+.buttons-list .project-link:not(:last-child) {
+  margin-right: 8px;
+}
 .buttons-list .button {
   display: block;
   border: 0;
   border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-.buttons-list .project-link:not(:last-child) {
-  margin-right: 8px;
-}
-.buttons-list .button {
+
   color: var(--title-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -335,7 +343,6 @@ a {
 
 .project-list .title {
   outline: 1px solid tomato;
-  margin: 0;
 
   color: var(--title-color);
   font-weight: bold;
@@ -345,7 +352,6 @@ a {
 }
 
 .project-list .meaning {
-  margin: 0;
   margin-top: 4px;
 
   color: var(--secondary-text-color);
@@ -356,23 +362,20 @@ a {
 /* Футер */
 
 footer {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-footer-color);
 }
 
 .logo-footer {
   display: block;
-  padding-top: 60px;
   margin-top: 0;
   margin-left: 15px;
   margin-right: auto;
 }
 .footer-address {
   padding: 0;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 0;
-  margin-bottom: 60px;
+  margin: 20px 0 0 15px;
 }
 .footer-address .link-footer:not(:first-child) {
   padding-top: 20px;
