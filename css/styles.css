@@ -41,7 +41,6 @@ p {
   margin: 0;
 }
 .container {
-  outline: 1px solid tomato;
   width: 1200px;
 
   margin-right: auto;
@@ -178,6 +177,9 @@ section {
 }
 
 /* Особенности */
+.peculiarities {
+  padding-bottom: 0;
+}
 .peculiarities .container {
   display: flex;
   flex-wrap: wrap;
@@ -199,7 +201,6 @@ section {
 }
 
 .peculiarities .peculiarities-title {
-  outline: 1px solid tomato;
   color: var(--title-color);
   font-weight: bold;
   line-height: 1.14;
@@ -207,7 +208,6 @@ section {
 }
 .peculiarities .peculiarities-description {
   margin-top: 10px;
-  outline: 1px solid tomato;
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
@@ -285,7 +285,6 @@ section {
 }
 
 .buttons-container .buttons-list {
-  outline: 1px solid tomato;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -320,7 +319,6 @@ section {
 }
 /* Проекты */
 .container .project-list {
-  outline: 1px solid tomato;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -331,19 +329,15 @@ section {
 }
 
 .project-list .example-project {
-  outline: 1px solid tomato;
   margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
 .object-text {
-  outline: 1px solid tomato;
   margin: 20px 24px;
 }
 
 .project-list .title {
-  outline: 1px solid tomato;
-
   color: var(--title-color);
   font-weight: bold;
   font-size: 18px;
