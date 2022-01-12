@@ -16,8 +16,6 @@
 }
 
 body {
-  width: 1600px;
-
   background-color: var(--background-color);
   color: var(--title-color);
   font-family: Roboto, sans-serif;
@@ -27,10 +25,18 @@ body {
 
 ul {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -41,12 +47,14 @@ p {
   margin: 0;
 }
 .container {
-  width: 1200px;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin-right: auto;
   margin-left: auto;
 }
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -75,7 +83,8 @@ section {
 }
 .logo-header {
   display: block;
-  margin: 24px 0 24px 15px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .logo span {
   color: var(--black-logo-color);
@@ -85,7 +94,6 @@ section {
 .site-nav {
   display: flex;
   align-items: center;
-  padding: 0;
   margin-left: 93px;
 }
 
@@ -116,7 +124,6 @@ section {
   display: flex;
   padding-left: 0px;
   margin-left: auto;
-  margin-right: 15px;
 }
 
 .link .item + .item {
@@ -139,7 +146,10 @@ section {
 /* Main СТУДИЯ */
 
 /* Герой */
+
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--background-footer-color);
 }
 
@@ -190,7 +200,6 @@ section {
 }
 .container .card-set {
   display: flex;
-  padding: 0;
   margin: 0 15px;
 }
 .container .item:not(:last-child) {
@@ -218,8 +227,6 @@ section {
 }
 .container .work-card {
   display: flex;
-  padding: 0;
-  margin: 0 15px 0 15px;
 }
 .title-work {
   margin-left: auto;
@@ -254,11 +261,16 @@ section {
 }
 .container .team-card {
   display: flex;
-  padding: 0;
-  margin: 50px 15px 0 15px;
+  margin-top: 50px;
 }
 .team-card .item:not(:last-child) {
   margin-right: 30px;
+}
+.text-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  background-color: var(--background-color);
 }
 .our-team .name {
   color: var(--title-color);
@@ -268,6 +280,8 @@ section {
   text-align: center;
 }
 .our-team .position {
+  margin-top: 10px;
+
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -285,10 +299,11 @@ section {
 .buttons-container .buttons-list {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin-top: 2px;
-  margin-bottom: 8px;
-  width: 1200px;
+}
+.buttons-container {
+  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttons-list .project-link:not(:last-child) {
@@ -319,8 +334,8 @@ section {
 .container .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 12px -15px 0 15px;
+
+  margin-right: -30px;
 }
 
 .project-list .example-project {
@@ -329,7 +344,10 @@ section {
   flex-basis: calc(100% / 3 - 30px);
 }
 .object-text {
-  margin: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .project-list .title {
@@ -358,14 +376,12 @@ footer {
 
 .logo-footer {
   display: block;
-  margin-left: 15px;
 }
 .footer-address {
-  padding: 0;
-  margin: 20px 0 0 15px;
+  margin-top: 20px;
 }
 .footer-address .link-footer:not(:first-child) {
-  padding-top: 20px;
+  margin-top: 9px;
 }
 
 .logo-footer span {
