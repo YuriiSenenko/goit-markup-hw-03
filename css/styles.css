@@ -58,6 +58,7 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .container {
   box-sizing: border-box;
   width: 1200px;
@@ -130,6 +131,10 @@ p {
 }
 .site-nav .link-nav:hover,
 .site-nav .link-nav:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .current {
   color: var(--accent-color);
 }
 
@@ -320,7 +325,7 @@ p {
   margin-right: auto;
 }
 
-.buttons-list .project-link:not(:last-child) {
+.buttons-list .buttons-item:not(:last-child) {
   margin-right: 8px;
 }
 .buttons-list .button {
@@ -353,7 +358,7 @@ p {
   margin-right: -30px;
 }
 
-.project-list .example-project {
+.project-list .project-item {
   margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
